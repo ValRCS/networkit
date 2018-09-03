@@ -22,6 +22,7 @@ matrix:
 
     - env: CC=gcc-6 CXX=g++-6
       os: osx
+      osx_image: xcode10
       sudo: false
       before_install:
         - brew update
@@ -46,6 +47,7 @@ matrix:
       env: CC=/usr/local/opt/llvm@4/bin/clang
       env: CXX=/usr/local/opt/llvm@4/bin/clang++
       os: osx
+      osx_image: xcode10
       sudo: false
       before_install:
         - brew update
